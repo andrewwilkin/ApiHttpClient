@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiHttpClient", "ApiHttpClient\ApiHttpClient.csproj", "{5C24835D-4269-4FD3-B143-ED84588CE2AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiHttpClient", "ApiHttpClient\ApiHttpClient.csproj", "{5C24835D-4269-4FD3-B143-ED84588CE2AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiHttpClient.Tests", "ApiHttpClient.Tests\ApiHttpClient.Tests.csproj", "{EBBB63E6-0210-4ACD-BDE1-46B71ACA6146}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{5C24835D-4269-4FD3-B143-ED84588CE2AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C24835D-4269-4FD3-B143-ED84588CE2AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C24835D-4269-4FD3-B143-ED84588CE2AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBBB63E6-0210-4ACD-BDE1-46B71ACA6146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBBB63E6-0210-4ACD-BDE1-46B71ACA6146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBBB63E6-0210-4ACD-BDE1-46B71ACA6146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBBB63E6-0210-4ACD-BDE1-46B71ACA6146}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
