@@ -39,7 +39,8 @@ namespace ApiHttpClient
         /// <returns>
         /// IRestResponse
         /// </returns>
-        public async Task<IRestResponse> Get(string resource, IEnumerable<UrlSegment> segments = null, IEnumerable<UrlParameter> parameters = null)
+        public async Task<IRestResponse> Get(string resource, IEnumerable<UrlSegment> segments = null,
+            IEnumerable<UrlParameter> parameters = null)
         {
             var request = new RestRequest(resource).AddRequestHeaders(_config, segments, parameters);
             return await _restClient.ExecuteTaskAsync(request);
@@ -51,9 +52,11 @@ namespace ApiHttpClient
         /// <returns>
         /// IRestResponse
         /// </returns>
-        public async Task<IRestResponse<T>> Get<T>(string resource, IEnumerable<UrlSegment> segments = null, IEnumerable<UrlParameter> parameters = null) where T : new()
+        public async Task<IRestResponse<T>> Get<T>(string resource, IEnumerable<UrlSegment> segments = null,
+            IEnumerable<UrlParameter> parameters = null) where T : new()
         {
             var request = new RestRequest(resource).AddRequestHeaders(_config, segments, parameters);
             return await _restClient.ExecuteTaskAsync<T>(request);
         }
     }
+}
